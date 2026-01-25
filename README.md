@@ -33,8 +33,25 @@ business insights.
 ---
 
 ## 📂 Project Structure
-
-
+```
+Shopper-Spectrum-Customer-Segmentation-and-Recommendation/
+│
+├── data/
+│   └── README.md
+│
+├── notebooks/
+│   └── 01_EDA_RFM_Clustering.ipynb
+│
+├── models/
+│   ├── rfm_scaler.pkl
+│   ├── rfm_kmeans.pkl
+│   └── product_similarity.pkl
+│
+├── train.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
 
 ---
 
@@ -51,10 +68,15 @@ Instructions to obtain the dataset are provided inside the `data/` folder.
 ## 🚀 How to Run
 1. Clone the repository
 2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 3. Place the dataset file inside the `data/` folder
 4. Run the notebook for EDA and model training
 5. Launch the Streamlit app:
-
+```bash
+streamlit run app.py
+```
 
 ---
 
